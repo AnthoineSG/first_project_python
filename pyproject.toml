@@ -16,10 +16,22 @@ dependencies = ["python-dotenv (>=1.0.1,<2.0.0)"]
 [tool.poetry.group.dev.dependencies]
 mypy = "^1.14.1"
 isort = "^6.0.0"
+pytest = "^8.3.4"
 
 [tool.poetry.scripts]
 start = "scripts.start:run"
 check = "scripts.check:run"
 format = "scripts.format:run"
+test = "scripts.test:run"
 type_check = "scripts.type_check:run"
 sort_imports = "scripts.sort_imports:run"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+filterwarnings = "error"
+xfail_strict = true
+
+[tool.ruff.format]
+quote-style = "single"
+indent-style = "tab"
+docstring-code-format = true
