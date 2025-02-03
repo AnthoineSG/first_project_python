@@ -1,0 +1,25 @@
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[project]
+name = "first_project"
+version = "0.1.0"
+description = "Mon premier projet Python"
+authors = [
+    { name = "AnthoineSG", email = "75179286+AnthoineSG@users.noreply.github.com" },
+]
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = ["python-dotenv (>=1.0.1,<2.0.0)"]
+
+[tool.poetry.group.dev.dependencies]
+mypy = "^1.14.1"
+isort = "^6.0.0"
+
+[tool.poetry.scripts]
+start = "scripts.start:run"
+check = "scripts.check:run"
+format = "scripts.format:run"
+type_check = "scripts.type_check:run"
+sort_imports = "scripts.sort_imports:run"
