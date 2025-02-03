@@ -2,4 +2,4 @@ import os
 
 
 def run():
-    os.system("pytest -v")
+	os.system('pytest -v')

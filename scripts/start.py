@@ -2,4 +2,4 @@ import os
 
 
 def run():
-    os.system("python -m first_project")
+	os.system('python -m first_project')

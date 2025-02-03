@@ -2,4 +2,4 @@ import os
 
 
 def run():
-    os.system("ruff format")
+	os.system('ruff format')

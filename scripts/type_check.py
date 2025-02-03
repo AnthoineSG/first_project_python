@@ -2,4 +2,4 @@ import os
 
 
 def run():
-    os.system("mypy --strict ./first_project")
+	os.system('mypy --strict ./first_project')

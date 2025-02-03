@@ -2,4 +2,4 @@ import os
 
 
 def run():
-    os.system("ruff check")
+	os.system('ruff check')
