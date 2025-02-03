@@ -1,5 +1,36 @@
 # Premier projet python
 
+Premier projet pour decouvrir l'univers de Python
+
+- [x] Crée un environement pour dev
+- [x] Faire une methode simple
+  - `./first_project/src/car.py`
+- [x] Ajouter un gestionnaire de package
+  - `poetry`
+- [x] Ajouter un linter
+  - `isort`
+- [x] Ajouter du typage
+  - `mypy`
+- [x] Ajouter des variables d'environements
+  - `python-dotenv`
+- [x] Ajouter des libs
+  - `mypy` / `isort` / `python-dotenv`
+- [] Ajouter de la doc
+- [] Ajouter des tests
+- [] Publier le projet
+
+## Start le projet
+
+- Ouvrir un terminal powershell
+  - Activer la Environement virtuel
+  - `./activate.ps1`
+    - Installer les dependences
+    - `poetry install`
+      - Lancer le projet
+      - `poetry run start`
+        - Stopper le projet
+        - `deactivate`
+
 ## Vesion de Python sur la machine
 
 ```bash
@@ -44,24 +75,37 @@ pip install python_dotenv
 poetry install python_dotenv
 ```
 
-## Start le projet
-
-- Ouvrir un terminal powershell
-  - Activer la Environement virtuel
-  - `.\venv-first-project\Scripts\Activate.ps1`
-    - Installer les dependences
-    - `poetry install`
-      - Lancer le projet
-      - `poetry run start`
-        - Stopper le projet
-        - `deactivate`
-
 ## Build
 
 Crée un fichier .whl et .tar.gz
 
 ```bash
 python -m build
+# Ou avec poetry
+poetry build
+```
+
+## Check le tree en powershell
+
+```bash
+tree /F
+```
+
+## Trier les imports
+
+```bash
+isort ./nom_du_fichier.py
+# Ou avec poetry
+poetry run sort-imports
+```
+
+## Verifier le typage
+
+```bash
+mypy ./nom_du_fichier.py # Verifie le typage actuel
+mypy --strict ./nom_du_fichier.py # Verifie si le typage est partout
+# Ou avec poetry
+poetry run type_check
 ```
 
 ## Linter
@@ -73,13 +117,14 @@ Pour check le linter
 ```bash
 ruff check
 ruff check --watch
+# Ou avec poetry
+poetry run check
 ```
 
 Pour formatter
 
 ```bash
 ruff format
+# Ou avec poetry
+poetry run format
 ```
-
-check le tree en powershell
-tree /F
