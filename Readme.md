@@ -1,5 +1,11 @@
 # Premier projet python
 
+## Docs
+
+Pour voir la doc du projet => [ici](https://anthoinesg.github.io/first_project_python/)
+
+---
+
 Premier projet pour decouvrir l'univers de Python
 
 - [x] Crée un environement pour dev
