@@ -17,6 +17,7 @@ dependencies = ["python-dotenv (>=1.0.1,<2.0.0)"]
 mypy = "^1.14.1"
 isort = "^6.0.0"
 pytest = "^8.3.4"
+mkdocs = "^1.6.1"
 
 [tool.poetry.scripts]
 start = "scripts.start:run"
