@@ -23,7 +23,8 @@ Premier projet pour decouvrir l'univers de Python
   - `mypy` / `isort` / `python-dotenv`
 - [x] Ajouter des tests
   - [`pytest`](https://docs.pytest.org/en/stable/)
-- [ ] Ajouter de la doc
+- [x] Ajouter de la doc
+  - [`MkDocs`](https://www.mkdocs.org/)
 - [ ] Ajouter des github actions
 - [ ] Ajouter un equivalent a semantic-release pour python
 - [ ] Publier le projet
