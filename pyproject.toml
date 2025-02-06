@@ -50,3 +50,5 @@ strict = true
 [tool.commitizen]
 version = "0.1.0"
 version_files = ["pyproject.toml:^version"]
+update_changelog_on_bump = true
+tag_format = "$version"
