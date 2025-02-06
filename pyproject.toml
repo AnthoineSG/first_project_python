@@ -29,12 +29,24 @@ test = "scripts.test:run"
 type_check = "scripts.type_check:run"
 sort_imports = "scripts.sort_imports:run"
 
+# ! PYTEST
 [tool.pytest.ini_options]
 testpaths = ["tests"]
 filterwarnings = "error"
 xfail_strict = true
 
+# ! RUFF
 [tool.ruff.format]
 quote-style = "single"
 indent-style = "tab"
 docstring-code-format = true
+
+# ! MYPY
+[tool.mypy]
+mypy_path = "."
+strict = true
+
+# ! COMMITIZEN
+[tool.commitizen]
+version = "0.1.0"
+version_files = ["pyproject.toml:^version"]
