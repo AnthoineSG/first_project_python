@@ -7,7 +7,7 @@ decorator_after = '#### Après fibonacci\n'
 
 class TestFibonacci:
 	def test_return(self):
-		assert fibonacci(1000) == None
+		assert fibonacci(1000) is None
 
 	def test_fibonacci(self, capsys):
 		# ! Test 0 - Return "\n"

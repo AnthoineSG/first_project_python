@@ -8,11 +8,11 @@ class TestSampleFunc:
 		assert func(x) == 1
 		assert func(x) != 0
 		assert func(x) != 2
-		assert func(x) != None
+		assert func(x) is None
 
 	def test_three(self):
 		x = 3
 		assert func(x) == 4
 		assert func(x) != 3
 		assert func(x) != 5
-		assert func(x) != None
+		assert func(x) is None
