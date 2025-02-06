@@ -25,6 +25,8 @@ Premier projet pour decouvrir l'univers de Python
   - [`pytest`](https://docs.pytest.org/en/stable/)
 - [x] Ajouter de la doc
   - [`MkDocs`](https://www.mkdocs.org/)
+- [x] Ajouter un check avant de commit
+  - [`commitizen`](https://github.com/commitizen-tools/commitizen) + [`pre-commit`](https://pre-commit.com/)
 - [ ] Ajouter des github actions
 - [ ] Ajouter un equivalent a semantic-release pour python
 - [ ] Publier le projet
